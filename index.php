@@ -1,6 +1,6 @@
 <?php
 $input = file_get_contents('php://input');
-$data = json_decode($input);
+$data = json_decode($input, true);
 $chat_id = $data['message']['chat']['id'];
 $text = 'salamaleykum';
 
