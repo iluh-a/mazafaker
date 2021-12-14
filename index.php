@@ -8,8 +8,8 @@ $api_key = '6a6dc0a3';
 
 $response = file_get_contents("http://www.omdbapi.com/?apikey=$api_key&s=$text");
 $movie = $response['Search'][0];
-$title = $movie['Title'];
-$year = $movie['Year'];
-$poster = $movie['Poster'];
-$message = "$title, $year, $poster";
-file_get_contents("https://api.telegram.org/bot$bot_token/sendMessage?chat_id=$chat_id&text=$message");
+//$title = $movie['Title'];
+//$year = $movie['Year'];
+//$poster = $movie['Poster'];
+//$message = "$title, $year, $poster";
+file_get_contents("https://api.telegram.org/bot$bot_token/sendMessage?chat_id=$chat_id&text=$movie");
