@@ -8,7 +8,7 @@ $api_key = '6a6dc0a3';
 
 $response = file_get_contents("http://www.omdbapi.com/?apikey=$api_key&s=$text");
 $obj = json_decode($response);
-$movie = $obj->{'Search'};
+$movie = $obj->Search[0];
 
 //$title = $movie['Title'];
 //$year = $movie['Year'];
