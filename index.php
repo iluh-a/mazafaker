@@ -7,7 +7,7 @@ $text = $data['message']['text'];
 $api_key = '6a6dc0a3';
 
 $response = file_get_contents("http://www.omdbapi.com/?apikey=$api_key&s=$text");
-$movie = $response->json()['Search'][0];
+$movie = gettype($response);
 //$title = $movie['Title'];
 //$year = $movie['Year'];
 //$poster = $movie['Poster'];
