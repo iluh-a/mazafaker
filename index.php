@@ -12,4 +12,4 @@ $movie = $response['Search'];
 //$year = $movie['Year'];
 //$poster = $movie['Poster'];
 //$message = "$title, $year, $poster";
-file_get_contents("https://api.telegram.org/bot$bot_token/sendMessage?chat_id=$chat_id&text=$movie");
+file_get_contents("https://api.telegram.org/bot$bot_token/sendMessage?chat_id=$chat_id&text=$response");
